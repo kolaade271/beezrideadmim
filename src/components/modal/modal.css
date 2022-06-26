@@ -4,7 +4,10 @@ width: 400px;
 height: 487px;
 margin-top: 20vh;
 }
-
+.popinfo{
+    padding-left: 35px;
+    padding-right: 35px;
+}
 .modal-title{
 font-style: normal;
 font-weight: 900;
@@ -21,7 +24,7 @@ color: #252733;
     margin: 20px;
 }
 .modal-text{
-
+margin-bottom: 20px;
 font-style: normal;
 font-weight: 600;
 font-size: 14px;
@@ -35,3 +38,77 @@ letter-spacing: 0.2px;
 
 color: #4B506D;
 }
+.iconmail{
+    color: rgba(36, 21, 113, 0.5);
+    margin-right: 5px;
+}
+label{
+    margin-bottom: 10px;
+    font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+color: rgba(0, 0, 0, 0.8);
+
+}
+.newadmin{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 7px;
+gap: 86px;
+
+width: 300px;
+height: 44px;
+
+background: #EDF4FA;
+border: 1px solid #8FC2EF;
+border-radius: 5px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+.adadmin::placeholder{
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+color: #686868;
+
+}
+
+.btnsubm,.btnsubm:hover{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 20px;
+gap: 10px;
+
+width: 300px;
+color: white;
+background: #241571;
+border-radius: 5px;
+
+flex: none;
+flex-grow: 0;
+
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+}
+

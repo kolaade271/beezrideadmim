@@ -1,6 +1,6 @@
 import "./modal.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faXmark,faUser } from '@fortawesome/free-solid-svg-icons'
 
 function Modal(){
     return(
@@ -11,9 +11,20 @@ function Modal(){
     <div className="modal-content">
         <div  className="btn-close" data-bs-dismiss="modal" >
           <FontAwesomeIcon icon={faXmark} className="close-icon float-right " /></div>
-     <div className="modal-title">Confirm Admin Status</div>
+          <div className="popinfo">
+     <div className="modal-title">Add New Admin</div>
       <div className="modal-body">
-        <div className="modal-text">Please enter your Administration Email and Password</div>
+        <div className="modal-text">Enter the email of the new Administrator</div>
+        <form>
+  <div className="form-group">
+    <label> <FontAwesomeIcon icon={faUser} className="iconmail" />Email address</label>
+    <input type="email" className="form-control newadmin"  aria-describedby="emailHelp" placeholder="Enter email"/>
+    </div>
+    <button className="btn  btnsubm shadow-none">Add Super Admin</button>
+ 
+ 
+</form>
+      </div>
       </div>
      
     </div>

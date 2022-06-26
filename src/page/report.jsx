@@ -25,7 +25,7 @@ function Report() {
                 <div className="report-title">Earning Report</div>
                 <div className="report-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                   nostrud amet.</div>
-                <button className="btn btn-success report-btn" >View Report</button>
+                <button className="btn  report-btn" >View Report</button>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ function Report() {
                 <div className="report-title">Payment Report</div>
                 <div className="report-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                   nostrud amet.</div>
-                <button className="btn btn-success report-btn" >View Report</button>
+                <button className="btn  report-btn" >View Report</button>
               </div>
             </div>
 
@@ -58,7 +58,7 @@ function Report() {
                 <div className="report-title">Referral Report</div>
                 <div className="report-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                   nostrud amet.</div>
-                <button className="btn btn-success report-btn" >View Report</button>
+                <button className="btn  report-btn" >View Report</button>
               </div>
             </div>
 
@@ -74,7 +74,7 @@ function Report() {
                 <div className="report-title">Driver wallet Report</div>
                 <div className="report-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                   nostrud amet.</div>
-                <button className="btn btn-success report-btn" >View Report</button>
+                <button className="btn  report-btn" >View Report</button>
               </div>
             </div>
 
@@ -90,7 +90,7 @@ function Report() {
                 <div className="report-title">Driver Log</div>
                 <div className="report-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                   nostrud amet.</div>
-                <button className="btn btn-success report-btn" >View Report</button>
+                <button className="btn  report-btn" >View Report</button>
               </div>
             </div>
 

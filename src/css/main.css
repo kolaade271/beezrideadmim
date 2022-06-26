@@ -367,10 +367,10 @@ border-color:white;
     
 }
 
-input.form-control:focus{
+/* input.form-control:focus{
     box-shadow: none;
     border-color: white;
-}
+} */
 /* Report Page Start  */
 .report-card{
   
@@ -467,10 +467,9 @@ flex-grow: 0;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-
+color: white;
 background: #241571;
 border-radius: 8px;
-border-color: #241571;
 font-family: 'Mulish';
 font-style: normal;
 flex: none;
@@ -499,3 +498,4 @@ color: #241571;
 
 flex-grow: 0;
  }
+ 

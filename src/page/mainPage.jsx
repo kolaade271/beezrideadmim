@@ -7,8 +7,14 @@ import { UserData } from './chart/Data';
 import Head from "../components/head";
 import Footer from "../components/footer";
 import Fab from "../components/fab/fab";
+import Modal from "../components/modal/modal";
+
+
+
 
 function Mainpage() {
+  
+  
   const [userData] = useState({
     labels: UserData.map((data) => data.year),
     datasets: [
@@ -317,9 +323,10 @@ function Mainpage() {
         </div>
 
       </div>
-
+      <Modal/>
       <Fab/>
       <Footer />
+      
       
     </main>
 

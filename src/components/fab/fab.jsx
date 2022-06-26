@@ -6,6 +6,7 @@ import { faPlus,faXmark } from '@fortawesome/free-solid-svg-icons'
 class Fab extends Component {
   
 
+    
     constructor(props) {
         super(props)
 
@@ -22,20 +23,22 @@ class Fab extends Component {
         return (
             <ul className="fabMenu">
                 <li className='adadmin'>
-                    <a href="#/">Add Staff</a>
+                    <a href="#/">Add Admin</a>
                 </li>
                 <li className='noticeu'>
-                    <a href="#/">Add Staff</a>
+                    <a href="#/">Notify Users</a>
                 </li>
                 <li className='notice'>
-                    <a href="#/">Add Staff</a>
+                    <a href="#/">Notify Drivers</a>
                 </li>
                 <li className='adminl'>
-                    <a href="#/">AddSuper Admin</a>
+                    <a href="#/" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Super Admin</a>
                 </li>
             </ul>
         )
     }
+
+    
 
     handleClick() {
         this.setState({ clicked: true });
@@ -59,11 +62,11 @@ class Fab extends Component {
 
             <div className="fab">
                 <div className="FabInner">
-                    <a href="#/" className="FabButton open" onClick={this.handleClick}>
+                    <div className="FabButton open" onClick={this.handleClick}>
                         {this.state.status ? <FontAwesomeIcon icon={faPlus} className="icon " /> 
                         : <FontAwesomeIcon icon={faXmark} className="icon " />}
 
-                    </a>
+                    </div>
                     <div className={mystate}>
                     {this.state.content}
                     </div>

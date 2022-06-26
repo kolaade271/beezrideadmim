@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './fab/fab.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faPlus,faXmark } from '@fortawesome/free-solid-svg-icons'
 
 class Maybe extends Component {
   
@@ -60,7 +60,8 @@ class Maybe extends Component {
             <div className="fab">
                 <div className="FabInner">
                     <a href="#/" className="FabButton open" onClick={this.handleClick}>
-                        {this.state.status ? <FontAwesomeIcon icon={faPlus} className="icon fa" /> : "x"}
+                        {this.state.status ? <FontAwesomeIcon icon={faPlus} className="icon " /> 
+                        : <FontAwesomeIcon icon={faXmark} className="icon " />}
 
                     </a>
                     <div className={mystate}>

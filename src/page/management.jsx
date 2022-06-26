@@ -24,6 +24,8 @@ function Manangement() {
    </div>
   
    <div className="container-fluid">
+   <div className="row">
+       <div className="col-6 col-md-6 col-lg-6 ">
    <div className="form-group has-search">
       <span className="form-control-feedback"><svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
   <circle cx="5" cy="5" r="4.3" stroke="#2B3674" stroke-width="1.4"/>
@@ -31,6 +33,8 @@ function Manangement() {
   </svg>
   </span>
       <input type="text" className="form-control search" placeholder="Search"/>
+      </div>
+      </div>
     </div>
   
   

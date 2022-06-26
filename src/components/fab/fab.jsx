@@ -10,12 +10,12 @@ function Fab(){
           <div className="fab">
             <div className="FabInner">
                 <a href="#/" className="FabButton">
-                <FontAwesomeIcon icon={faPlus} className="icon" />
+                <FontAwesomeIcon icon={faPlus} className="icon fa" />
                 </a>
                 <ul className="fabMenu">
                    
                   
-                    <li>
+                    <li className='adminl'>
                         <a href="#/">Add Inventory</a>
                     </li>
                     <li>

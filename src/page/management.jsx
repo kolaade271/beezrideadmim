@@ -1,3 +1,4 @@
+import Maybe from "../components/maybe";
 
 
 
@@ -41,7 +42,7 @@ function Manangement() {
   </div>
   
   
-  
+ <Maybe/>
   
   
   </main>

@@ -1,10 +1,14 @@
-
+a{
+    text-decoration: none;
+    
+}
   .fab {
     display: block;
     position: fixed;
     bottom: 45px;
     right: 45px;
     z-index: 999999999;
+    
 }
 
 .FabInner {
@@ -50,13 +54,19 @@
 .FabButton.open .fa {
     transform: rotate(270deg);
 }
+.fabclose{
+    display: none;
+}
+.fabopen{
+    display: open;
+}
 
 .fabMenu {
     position: absolute;
     bottom: 60px;
     right: 0px;
     /* width: 200px; */
-    display: none;
+    /* display: none; */
 }
 
 .fabMenu li {
@@ -66,20 +76,40 @@
     text-align: right;
     margin-bottom: 5px;
 }
+li.adminl{
+    background-color: red;
+}
+li.notice{
+    background: #3D24BD;
+
+}
+li.noticeu{
+    background: #5230FC;
+
+}
+li.adadmin{
+    background: #1C1057;
+
+}
 
 .fabMenu li a {
-    padding: 8px 15px;
+
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 13px;
+/* identical to box height */
+
+letter-spacing: 0.2px;
+    padding: 4px 16px;
+    gap: 10px;
     display: inline-block;
-    background: #ccd7f5;
-    color: #6077b0;
+    color: #FFFFFF;
     border-radius: 5px;
     overflow: hidden;
     white-space: nowrap;
     transition: all 0.4s;
-    /* -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22); */
-    -webkit-box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
-    box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
 }
 
 .fabMenu li a:hover {

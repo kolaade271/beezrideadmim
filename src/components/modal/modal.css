@@ -1,0 +1,37 @@
+.permit{
+    position: relative;
+width: 400px;
+height: 487px;
+margin-top: 20vh;
+}
+
+.modal-title{
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 29px;
+align-content: center;
+text-align: center;
+letter-spacing: 0.3px;
+color: #252733;
+}
+
+
+.close-icon{
+    margin: 20px;
+}
+.modal-text{
+
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 22px;
+/* or 157% */
+
+text-align: center;
+letter-spacing: 0.2px;
+
+/* grayscale / gray dark */
+
+color: #4B506D;
+}

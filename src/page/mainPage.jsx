@@ -2,12 +2,11 @@
 
 import { React, useState } from "react";
 import LineChart from './chart/uptrend';
-//import BarChart from './chart/traffic';
 import { UserData } from './chart/Data';
 import Head from "../components/head";
 import Footer from "../components/footer";
 import Fab from "../components/fab/fab";
-import Modal from "../components/modal/modal";
+import Modal from "../components/modal/addAdmin";
 
 
 

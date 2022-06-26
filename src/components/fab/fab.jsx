@@ -32,7 +32,7 @@ class Fab extends Component {
                     <a href="#/">Notify Drivers</a>
                 </li>
                 <li className='adminl'>
-                    <a href="#/" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Super Admin</a>
+                    <a href="#/" data-bs-toggle="modal" data-bs-target="#addAdmim">Add Super Admin</a>
                 </li>
             </ul>
         )

@@ -31,7 +31,7 @@ class Fab extends Component {
                     <a href="#/">Add Staff</a>
                 </li>
                 <li className='adminl'>
-                    <a href="#/">Add Inventory</a>
+                    <a href="#/">AddSuper Admin</a>
                 </li>
             </ul>
         )

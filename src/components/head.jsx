@@ -3,7 +3,6 @@ function Head(){
     return (<div className="row">
     <div className="col-12 col-md-6 col-lg-6 mb-4 mb-lg-0">
      <div className="overview ">Dashboard</div>
-     <div className="page-name">pages/dashboard</div>
      </div>
     <div className="col-12 col-md-6 col-lg-6 mb-4 mb-lg-0 " align="right">
       <div className="col-12 col-md-12 col-lg-12 d-flex align-items-center justify-content-md-end mt-3 mt-md-0">

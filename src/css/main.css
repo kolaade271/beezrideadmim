@@ -50,6 +50,10 @@ body{
     align-content: center;
     text-align: center;
   }
+  .superadmin-modal{
+    width: 30%;
+height: 487px;
+}
 
 }
 

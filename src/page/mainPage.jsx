@@ -1,19 +1,14 @@
-
-
 import { React, useState } from "react";
 import LineChart from './chart/uptrend';
 import { UserData } from './chart/Data';
 import Head from "../components/head";
 import Footer from "../components/footer";
 import Fab from "../components/fab/fab";
-import Modal from "../components/modal/addAdmin";
-
-
-
+import AddAdmin from "../components/modal/addAdmin";
+import Notify from "../components/modal/notify";
 
 function Mainpage() {
-  
-  
+
   const [userData] = useState({
     labels: UserData.map((data) => data.year),
     datasets: [
@@ -32,16 +27,8 @@ function Mainpage() {
         backgroundColor: ["green", 0.5],
         tension: 0.4,
       },
-
-
     ],
-
-
-
   });
-
-
-
 
   return (
     <main className="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-5">
@@ -114,12 +101,7 @@ function Mainpage() {
               </div>
             </div>
           </div>
-
-
-
         </div>
-
-
 
         <div className="row my-4">
 
@@ -159,9 +141,6 @@ function Mainpage() {
             </div>
           </div>
 
-
-
-
           <div className="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
             <div className="card card-label">
 
@@ -196,8 +175,6 @@ function Mainpage() {
               </div>
             </div>
           </div>
-
-
         </div>
 
         <div className="row my-4">
@@ -311,22 +288,19 @@ function Mainpage() {
                       <td>10</td>
                       <td>5 (6 of 10)</td>
                     </tr>
-
-
-
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-      <Modal/>
-      <Fab/>
+      <AddAdmin />
+      <Notify/>
+      <Fab />
       <Footer />
-      
-      
+
+
     </main>
 
   );

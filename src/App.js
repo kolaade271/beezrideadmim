@@ -7,6 +7,7 @@ import Mainpage from './page/mainPage';
 import Manangement from './page/management';
 import UserAccount from './page/account';
 import Report from './page/report';
+import Profile from './page/profile';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
       <Route path="/management" element={<Manangement/> } />
       <Route path="/account" element={<UserAccount/> } />
       <Route path="/reports" element={<Report/> } />
+      <Route path="/profile" element={<Profile/> } />
     </Routes>
     </BrowserRouter>
       </div>

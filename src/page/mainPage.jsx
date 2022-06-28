@@ -8,7 +8,6 @@ import AddAdmin from "../components/modal/addAdmin";
 import Notify from "../components/modal/notify";
 
 function Mainpage() {
-
   const [userData] = useState({
     labels: UserData.map((data) => data.year),
     datasets: [
@@ -97,7 +96,6 @@ function Mainpage() {
               <div className="card-body">
                 <div className="card-elemx">Sales</div>
                 <div className="card-mainx">$574.34</div>
-
               </div>
             </div>
           </div>
@@ -296,7 +294,7 @@ function Mainpage() {
         </div>
       </div>
       <AddAdmin />
-      <Notify/>
+      <Notify />
       <Fab />
       <Footer />
 

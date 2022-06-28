@@ -85,7 +85,7 @@ body {
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 32px;
   margin-top: 5px;;
   line-height: 20px;
 
@@ -102,7 +102,7 @@ body {
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   /* or 143% */
 
@@ -535,3 +535,56 @@ thead {
 
   flex-grow: 0;
 }
+
+/* profile */
+.profile-card{
+height: 600px;
+
+margin-top: 30px;
+background: #FFFFFF;
+border-radius: 44px;
+border-color: white;
+padding: 20px;
+
+
+}
+
+.profile-cover{
+  height: 150px;
+border-radius: 35.2px;
+background: url(https://i.ibb.co/MNyyCLd/Background-Image.png)no-repeat;
+background-size: cover;
+}
+.profile-img{
+  height: 130px;
+  width: 130px;
+  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 50%;
+   border: 5px solid white;
+
+}.profile-name{
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+letter-spacing: -0.3px;
+margin-top: 20px;
+margin-left: 30px;
+
+color: #FFFFFF;
+}
+.profile-role{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+margin-left: 30px;
+color: white;
+
+display: flex;
+}
+
+/* end of profile */

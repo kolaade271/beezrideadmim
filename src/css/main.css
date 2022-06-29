@@ -538,7 +538,6 @@ thead {
 
 /* profile */
 .profile-card{
-height: 600px;
 
 margin-top: 30px;
 background: #FFFFFF;
@@ -584,7 +583,72 @@ line-height: 20px;
 margin-left: 30px;
 color: white;
 
-display: flex;
 }
 
+.profile-form{
+  margin-top: 100px;
+  margin-left: 10px;
+}
+.profileinput, .profileinput:disabled{
+  background: #E8E5ED;
+border: 1.12268px solid #C6C2DA;
+height: 42.45px;
+margin-bottom: 20px;
+}
+
+.profileinput::placeholder{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+  
+  color: #000000;
+}
+
+.btn-password, .btn-password:hover{
+  width: 100%;
+  color: white;
+  background: #241571;
+border-radius: 10px;
+margin-top: 20px;
+}
+label{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.3px;
+
+color: #908D9A;
+}
+.chpw{
+  background: #FFFFFF;
+  border: 1.12268px solid #E5E2EB;
+  border-radius: 11.2268px;
+margin-bottom: 20px;
+}
+.chpw, .chpw::placeholder{
+  font-family: 'Mulish';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+  
+  color: #A5A5A5;
+}
 /* end of profile */

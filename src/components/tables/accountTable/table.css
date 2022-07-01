@@ -131,3 +131,12 @@
   border-color: white;
   text-align: center;
 }
+.pending{
+color: #FACD5C;
+}
+.reject{
+color: #BF1B00;
+}
+.approve{
+color: #1BBC3F;
+}

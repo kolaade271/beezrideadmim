@@ -35,9 +35,12 @@ const Table = props => {
     },
     {
       name: "STATUS",
-      selector: "true",
+      cell: row =>
+      row.id===4 ? (
+       <div className="reject">Rejected</div>
+      ) : row.id ===10 ||row.id === 8?(<div className="approve">Approved</div>) :(<div className="pending">Pending</div>),
       sortable: true,
-      hide: "md"
+      hide: "sm"
     },
    
     {
@@ -95,7 +98,6 @@ const Table = props => {
     <DataTable
       columns={columns}
       data={filteredItems}
-      defaultSortField="name"
       pagination
       subHeader
       subHeaderComponent={subHeaderComponent}

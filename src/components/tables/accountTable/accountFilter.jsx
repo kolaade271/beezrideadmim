@@ -33,8 +33,8 @@ const AccountFilter = ({ filterText, onFilter, onClear }) => (
         <select  onChange={onFilter}  className="btn btn-md center-block filter dropdown-toggle " data-bs-toggle="dropdown">
   
   <option className="dropdown-item" value=""> <FontAwesomeIcon icon={faFilter} /> All Filter</option>
-  <option className="dropdown-item" value="1qqqqqq">Status - success</option>
-  <option className="dropdown-item" value="3">Status - in-progress</option>
+  <option className="dropdown-item" value="P">Status - pending</option>
+  <option className="dropdown-item" value="10">Status - in-progress</option>
 </select>
 
           {/* <button   onChange={onFilter} className="btn btn-md center-block filter dropdown-toggle " data-bs-toggle="dropdown" ><FontAwesomeIcon icon={faFilter} /> Filter</button>

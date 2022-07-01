@@ -7,8 +7,8 @@ import Footer from "../components/footer";
 
 function Report() {
   return (
-    <main className="col-md-9 ml-sm-auto col-lg-10 px-md-3 py-4">
-      <Head />
+    <main className="col-md-9 ml-sm-auto col-lg-10 px-md-3 py-5">
+      <Head name="Reports" />
       <div className="container-fluid">
 
         <div className="card report-card">

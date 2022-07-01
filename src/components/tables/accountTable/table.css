@@ -112,18 +112,21 @@
 .approve-button:hover {
   background-color: #1BBC3F;
   color: white;
+  font-size: 14px;
 }
 
 .reject-button,
 .reject-button:hover {
   background-color: #EA801E;
   color: white;
+  font-size: 14px;
 }
 
 .block-button,
 .block-button:hover {
   background-color: #BF1B00;
   color: white;
+  font-size: 14px;
 }
 
 .dropdown-menu {
@@ -139,4 +142,40 @@ color: #BF1B00;
 }
 .approve{
 color: #1BBC3F;
+}
+
+.table-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+  
+  width: 10px;
+  height: 41px;
+
+  
+
+
+}
+
+.searchdata {
+  width: 300px;
+  margin-left: -20px;
+  margin-top: 10px;
+
+  background: #FFFFFF;
+  border-radius: 49px;
+
+}
+
+.table-search .form-control {
+  padding-left: 2.6rem;
+  background: #F6F7F9;
+border: 1px solid #E6E8ED;
+border-radius: 49px;
+font-style: italic;
+font-size: 14px;
 }

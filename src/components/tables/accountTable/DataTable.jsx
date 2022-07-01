@@ -98,6 +98,7 @@ const Table = props => {
     <DataTable
       columns={columns}
       data={filteredItems}
+      defaultSortField="name"
       pagination
       subHeader
       subHeaderComponent={subHeaderComponent}

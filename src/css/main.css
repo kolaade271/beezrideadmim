@@ -363,7 +363,6 @@ img {
 
   background: #FFFFFF;
   border-radius: 49px;
-  border-color: white;
 
 }
 
@@ -652,3 +651,17 @@ margin-bottom: 20px;
   color: #A5A5A5;
 }
 /* end of profile */
+
+
+/* account page */
+.account-table{
+  display: flex;
+padding: 20px;
+border-color: white;
+margin-top: 20px;
+background: #FFFFFF;
+border-radius: 20px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}

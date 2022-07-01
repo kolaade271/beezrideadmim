@@ -31,7 +31,7 @@ function Mainpage() {
 
   return (
     <main className="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-5">
-      <Head />
+      <Head  name="Dashboard"/>
 
       <div className="container-fluid">
 

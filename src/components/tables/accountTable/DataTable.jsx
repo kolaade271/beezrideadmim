@@ -53,6 +53,7 @@ const Table = props => {
         <li><a className="dropdown-item reject-button" href="#/">REJECT</a></li>
         <li><a className="dropdown-item block-button" href="#/">BLOCK</a></li>
       </ul>
+      
     </div>
     // <button className="btn btn-success"  onClick={() => props.click(row.name)}>Action</button>
           
@@ -63,7 +64,7 @@ const Table = props => {
   const [resetPaginationToggle, setResetPaginationToggle] = React.useState(
     false
   );
-  // const filteredItems = data.filter(
+  // const filteredItems =props.data.filter(
   //   item => item.name && item.name.includes(filterText)
   // );
   const filteredItems = props.data.filter(
@@ -85,14 +86,13 @@ const Table = props => {
       <AccountFilter
         onFilter={e => setFilterText(e.target.value)}
         onClear={handleClear}
-        filterText={filterText}
       />
     );
   }, [filterText, resetPaginationToggle]);
 
+
   return (
     <DataTable
-    className="dataTables_wrapper"
       columns={columns}
       data={filteredItems}
       defaultSortField="name"

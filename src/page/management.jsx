@@ -6,6 +6,7 @@ import DriverTable from "../components/tables/managementTable/DriverTable";
 import DriverModal from "../components/modal/management/driverModal";
 import TripTable from "../components/tables/managementTable/TripTable";
 import TripModal from "../components/modal/management/tripModal";
+import SharedTable from "../components/tables/managementTable/sharedTable";
 
 function Manangement() {
   const [alldriver, setTable] = useState([]);
@@ -64,9 +65,8 @@ function Manangement() {
                 <TripTable data={alltrip} click={tripHandler} className="trips"/>
                 </div>
               <div className="tab-pane fade" id="Shared">
-                <h4 className="mt-2">Shared tab content</h4>
-                <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in tempus imperdiet. Cum sociis natoque penatibus et magnis.</p>
-              </div>
+                <SharedTable data={alltrip} click={tripHandler} className="trips"/>
+                </div>
 
               <div className="tab-pane fade" id="Private">
                 <h4 className="mt-2">Private tab content</h4>

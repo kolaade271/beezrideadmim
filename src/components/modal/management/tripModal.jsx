@@ -1,10 +1,7 @@
 import "./../modal.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser,faPeopleGroup,
-    faIdCard, faCar, faPalette,  
-    faMobile, 
+import { faUser, faPalette,
     faCalendarAlt,
-    faTruckPickup,
     faMapLocation,
     faMapMarked,
     faLocation,
@@ -17,8 +14,8 @@ import { faUser,faPeopleGroup,
 function TripModal(props) {
   return (
     <div className="">
-      <div className="modal fade " id="trip" tabindex="-1" aria-hidden="true">
-        <div className="modal-dialog modal-lg drivermodal">
+      <div className="modal fade drivermodal" id="trip" tabindex="-1" aria-hidden="true">
+        <div className="modal-dialog modal-lg ">
           <div className="modal-content">
             <div className="">
               <div className="modal-body">

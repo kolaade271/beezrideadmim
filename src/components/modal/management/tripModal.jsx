@@ -5,17 +5,17 @@ import { faUser,faPeopleGroup,
     faMobile, 
     faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
 
-function DriverModal(props) {
+function TripModal(props) {
   return (
     <div className="">
-      <div className="modal fade " id="driver" tabindex="-1" aria-hidden="true">
+      <div className="modal fade " id="trip" tabindex="-1" aria-hidden="true">
         <div className="modal-dialog modal-lg drivermodal">
           <div className="modal-content">
             <div className="">
               <div className="modal-body">
                 
               <form className="row g-4 nth">
-              <div className="driverdetail">Driver Details</div>
+              <div className="driverdetail">Trip Details</div>
   <div className="col-md-4">
     <label  className="form-label input-label">
     <FontAwesomeIcon icon={faUser} className="iconmail" /> &nbsp;&nbsp; Legal Last Name</label>
@@ -91,5 +91,5 @@ function DriverModal(props) {
 
 
 
-export default DriverModal;
+export default TripModal;
 

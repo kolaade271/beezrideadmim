@@ -4,6 +4,8 @@ import "../components/tables/table.css";
 import axios from "axios";
 import DriverTable from "../components/tables/managementTable/DriverTable";
 import DriverModal from "../components/modal/management/driverModal";
+import TripTable from "../components/tables/managementTable/TripTable";
+import TripModal from "../components/modal/management/tripModal";
 
 function Manangement() {
   const [alldriver, setTable] = useState([]);
@@ -15,9 +17,21 @@ function Manangement() {
       })
   };
   useEffect(() => getTable(), []);
-  const [driverModal, setEvent] = useState([]);
+
+  const [alltrip, setTrip] = useState([]);
+  const getTrip = () => {
+    axios.get("https://jsonplaceholder.typicode.com/users")
+      .then((response) => {
+        const driveTable = response.data;
+        setTrip(driveTable);
+      })
+  };
+  useEffect(() => getTrip(), []);
+  const [driverModal, driverEvent] = useState([]);
+  const [tripModal, TripEvent] = useState([]);
   
-  const driverHandler = modalData =>   setEvent(modalData);
+  const driverHandler = driverData =>   driverEvent(driverData);
+  const tripHandler = tripData =>   TripEvent(tripData);
   return (
     <main className="col-md-9 ml-sm-auto col-lg-10 px-md-3 py-5">
       <Head name="Management" />
@@ -47,9 +61,8 @@ function Manangement() {
                 <DriverTable data={alldriver} click={driverHandler} />
               </div>
               <div className="tab-pane fade" id="Trip">
-                <h4 className="mt-2">Trip tab content</h4>
-                <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
-              </div>
+                <TripTable data={alltrip} click={tripHandler}/>
+                </div>
               <div className="tab-pane fade" id="Shared">
                 <h4 className="mt-2">Shared tab content</h4>
                 <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in tempus imperdiet. Cum sociis natoque penatibus et magnis.</p>
@@ -66,6 +79,7 @@ function Manangement() {
 
       </div>
     <DriverModal data={driverModal}/>
+    <TripModal data={tripModal}/>
     </main>
   );
 }

@@ -61,7 +61,7 @@ function Manangement() {
                 <DriverTable data={alldriver} click={driverHandler} />
               </div>
               <div className="tab-pane fade" id="Trip">
-                <TripTable data={alltrip} click={tripHandler}/>
+                <TripTable data={alltrip} click={tripHandler} className="trips"/>
                 </div>
               <div className="tab-pane fade" id="Shared">
                 <h4 className="mt-2">Shared tab content</h4>

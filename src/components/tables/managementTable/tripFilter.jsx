@@ -7,8 +7,8 @@ const TripFilter = ({ filterText, onFilter, onClear }) => (
     <div className="row">
         <div className="col-12 col-md-7">
             <div className="row">
-                <div className="col-12 col-md-3 tabiletitle">Pending Trip</div>
-                <div className="col-12 col-md-9">
+                <div className="col-12 col-md-4 tabiletitle">Pending Trip</div>
+                <div className="col-12 col-md-8">
                     <div className="form-group table-search">
                         <span className="form-control-feedback"><svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="5" cy="5" r="4.3" stroke="#2B3674" stroke-width="1.4" />

@@ -200,3 +200,10 @@ font-size: 14px;
 .rdt_TableCol{
   width: 10px;
 }
+
+.trips{
+  width: 40%;
+}
+.red{
+  background-color: red;
+}

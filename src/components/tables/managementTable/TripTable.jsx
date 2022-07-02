@@ -8,39 +8,41 @@ const TripTable = props => {
       name: "",
       cell: row=> (<img src="https://i.ibb.co/4VgSPDq/head.png" className="table-img" alt="" />),
       sortable: true,
-      grow: 0
+      width: "50px",
+      
     },
     {
       name: "PUBLISHER",
       selector: "name",
       sortable: true,
-      grow: 1
+      width:"160px",
     },
     {
         name: "RIDE TYPE",
         cell:row=>("Shared"),
         sortable: true,
-        grow: 0
+        width:"120px",
       },
     {
       name: "EMAIL",
       selector: "email",
       sortable: true,
       hide: "sm",
-      grow: 0.9
+      width:"130px",
+      
     },
     {
       name: "PHONE",
       selector: "phone",
       sortable: true,
-      grow: 1
+      width:"120px",
     },
     {
       name: "DATE",
       cell: row=> (<div><div className="date">June 12, 2022</div><br></br><div className="time">06:30 AM</div></div>),
       sortable: true,
       hide: "md",
-      grow: 1
+      width: "150px",
     },
     {
       name: "STATUS",
@@ -49,14 +51,13 @@ const TripTable = props => {
        <div className="reject">Rejected</div>
       ) : row.id ===10 ||row.id === 8?(<div className="approve">Approved</div>) :(<div className="pending">Pending</div>),
       sortable: true,
-      hide: "sm",
-      grow: 0
+      width:"150px",
     },
    
     {
       name: "ACTION",
       button: true,
-      grow: 1,
+      width:"80px",
       cell: row =>
       <button type="button" className="btn btn-primary  mgtoption"data-bs-toggle="modal" data-bs-target="#trip" onClick={() => props.click(row)} >
         View Details

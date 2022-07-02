@@ -167,3 +167,12 @@ color: #000000;
 padding-top: 20px;
 padding-bottom: 10px;
 }
+.ls, .ls:hover{
+    margin: 10px;
+    color: white;
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+}

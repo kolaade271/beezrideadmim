@@ -49,6 +49,24 @@
   flex-grow: 0;
 }
 
+
+.mgtoption,
+.mgtoption:hover,
+.mgtoption:active {
+  font-weight: 500;
+  font-size: 12px;
+
+  background: #4318FF;
+  border-radius: 20px;
+  border-color: #4318FF;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 6;
+  flex-grow: 0;
+}
+
 .tabiletitle {
 
   height: 20px;
@@ -178,4 +196,7 @@ border: 1px solid #E6E8ED;
 border-radius: 49px;
 font-style: italic;
 font-size: 14px;
+}
+.rdt_TableCol{
+  width: 10px;
 }

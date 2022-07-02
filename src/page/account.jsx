@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Table from "../components/tables/accountTable/DataTable";
-import "../components/tables/accountTable/table.css";
+import "../components/tables/table.css";
 import axios from "axios";
 
 import Head from "../components/head";

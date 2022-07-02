@@ -1,4 +1,4 @@
-import "./modal.css"
+import "./../modal.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faUser } from '@fortawesome/free-solid-svg-icons'
 

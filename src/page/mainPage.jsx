@@ -4,8 +4,8 @@ import { UserData } from './chart/Data';
 import Head from "../components/head";
 import Footer from "../components/footer";
 import Fab from "../components/fab/fab";
-import AddAdmin from "../components/modal/addAdmin";
-import Notify from "../components/modal/notify";
+import AddAdmin from "../components/modal/dashboard/addAdmin";
+import Notify from "../components/modal/dashboard/notify";
 
 function Mainpage() {
   const [userData] = useState({

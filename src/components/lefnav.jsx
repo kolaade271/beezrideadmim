@@ -11,43 +11,43 @@ function Leftnav() {
         <div className="position-sticky">
           <ul className="nav flex-column">
             <li className="nav-item">
-              <NavLink reloadDocument className="nav-link " to="/">
+              <NavLink reloadDocument className="nav-link leftnav" to="/">
                 <FontAwesomeIcon icon={faDashboard} />
                 <span className="ml-3">Dashboard</span>
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink reloadDocument className="nav-link " aria-current="page" to="/account">
+              <NavLink reloadDocument className="nav-link leftnav " to="/account">
                 <FontAwesomeIcon icon={faUser} />
                 <span className="ml-3">Accounts</span>
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink reloadDocument className="nav-link " aria-current="page" to="/management">
+              <NavLink reloadDocument className="nav-link leftnav"  to="/management">
                 <FontAwesomeIcon icon={faDiceD20} />
                 <span className="ml-3">Manangement</span>
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink reloadDocument className="nav-link " aria-current="page" to="/review">
+              <NavLink reloadDocument className="nav-link leftnav" to="/review">
                 <FontAwesomeIcon icon={faUsersViewfinder} />
                 <span className="ml-3">Review</span>
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink reloadDocument className="nav-link " aria-current="page" to="/reports">
+              <NavLink reloadDocument className="nav-link " to="/reports">
                 <FontAwesomeIcon icon={faChartLine} />
                 <span className="ml-3">Reports</span>
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink reloadDocument className="nav-link " aria-current="page" to="/reports">
+              <NavLink reloadDocument className="nav-link leftnav" to="/commission">
                 <FontAwesomeIcon icon={faPercentage} />
                 <span className="ml-3">Commission</span>
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink reloadDocument className="nav-link " aria-current="page" to="/profile">
+              <NavLink reloadDocument className="nav-link leftnav"  to="/profile">
                 <span className="ml-3">Profile</span>
               </NavLink>
             </li>

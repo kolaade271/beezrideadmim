@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import Head from "../components/head";
 import "../components/tables/table.css";
 import axios from "axios";
-import DriverTable from "../components/tables/managementTable/DriverTable";
+import DriverTable from "../components/tables/managementTable/drive/DriverTable";
 import DriverModal from "../components/modal/management/driverModal";
-import TripTable from "../components/tables/managementTable/TripTable";
+import TripTable from "../components/tables/managementTable/trips/TripTable";
 import TripModal from "../components/modal/management/tripModal";
-import SharedTable from "../components/tables/managementTable/sharedTable";
+import SharedTable from "../components/tables/managementTable/shared/sharedTable";
+import PrivateTable from "../components/tables/managementTable/private/PrivateTable";
 
 function Manangement() {
   const [alldriver, setTable] = useState([]);
@@ -28,11 +29,25 @@ function Manangement() {
       })
   };
   useEffect(() => getTrip(), []);
+
+
+  const [allprivate, setPrivate] = useState([]);
+  const getPrivate = () => {
+    axios.get("https://jsonplaceholder.typicode.com/users")
+      .then((response) => {
+        const driveTable = response.data;
+        setPrivate(driveTable);
+      })
+  };
+  useEffect(() => getPrivate(), []);
+
   const [driverModal, driverEvent] = useState([]);
   const [tripModal, TripEvent] = useState([]);
+  const [privateModal, PrivateEvent] = useState([]);
   
   const driverHandler = driverData =>   driverEvent(driverData);
   const tripHandler = tripData =>   TripEvent(tripData);
+  const privateHandler = privateData =>   PrivateEvent(privateData);
   return (
     <main className="col-md-9 ml-sm-auto col-lg-10 px-md-3 py-5">
       <Head name="Management" />
@@ -69,9 +84,8 @@ function Manangement() {
                 </div>
 
               <div className="tab-pane fade" id="Private">
-                <h4 className="mt-2">Private tab content</h4>
-                <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in tempus imperdiet. Cum sociis natoque penatibus et magnis.</p>
-              </div>
+               <PrivateTable data={allprivate} click={privateHandler} className="trips"/>
+                </div>
             </div>
           </div>
 
@@ -80,6 +94,7 @@ function Manangement() {
       </div>
     <DriverModal data={driverModal}/>
     <TripModal data={tripModal}/>
+    
     </main>
   );
 }

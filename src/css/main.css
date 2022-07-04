@@ -696,7 +696,7 @@ color: #201A3F;
   overflow: hidden;
   overflow-x: hidden;
 }
-.nav-link{
+.nleftnav{
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 400;
@@ -705,7 +705,7 @@ color: #201A3F;
   letter-spacing: 0.3px;
   color: #dfdde6;
 }
-.nav-link.active{
+.leftnav.active{
   padding-top: 15px;
   padding-bottom: 15px;
   background: #221950;
@@ -715,7 +715,4 @@ font-weight: bolder;
 font-size: 14px;
 border-left: 2px solid white;
 color: white;
-}
-.nav-link.li-icon{
-  color: #eae8f4;
 }

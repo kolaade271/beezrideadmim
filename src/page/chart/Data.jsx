@@ -14,7 +14,7 @@ export const UserData = [
     {
       id: 3,
       year: "Mar",
-      Users: 788,
+      Users: 1008,
       signUp: 3000,
     },
 
@@ -22,7 +22,7 @@ export const UserData = [
       id: 4,
       year: "Apr",
       Users: 100,
-      signUp: 100,
+      signUp: 600,
     },
     {
       id: 5,

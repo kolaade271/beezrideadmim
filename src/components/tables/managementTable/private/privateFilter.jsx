@@ -21,7 +21,6 @@ const PrivateFilter = ({ filterText, onFilter, onClear }) => (
                 </div>
             </div>
 
-
         </div>
         <div className="col-12 col-md-5 " >
             <div className="row ">

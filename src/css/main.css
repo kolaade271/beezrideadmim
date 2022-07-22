@@ -716,3 +716,83 @@ font-size: 14px;
 border-left: 2px solid white;
 color: white;
 }
+.toprate{
+  margin-bottom: 20px;
+}
+.topcard{
+
+background: #F4F2F7;
+border: 1px solid #DCDCDC;
+}
+
+.badge{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+margin-top: -5px;
+margin-left: 5px;
+
+position: absolute;
+width: 50px;
+height: 20px;
+
+background-color: #241571;
+border-radius: 10px;
+
+
+}
+.refimg{
+  width: 60px;
+height: 60px;
+}
+.rev{
+    float:right;    
+}
+.revstar{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+letter-spacing: 0.3px;
+float:right;    
+color: #000000;
+
+}
+.revname{
+  font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.3px;
+
+color: #000000;
+}
+
+.revhead{
+  width: 130px;
+height: 20px;
+
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 20px;
+letter-spacing: 0.3px;
+
+color: #252733;
+margin-bottom: 10px;
+
+}
+.cardref{
+  background: #FFFFFF;
+border-radius: 20px;
+margin-top: 10px;
+border-color: #FFFFFF;
+}
+.rateamt{
+  font-weight: bold;
+}

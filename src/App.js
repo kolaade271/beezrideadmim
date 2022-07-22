@@ -8,6 +8,7 @@ import Manangement from './page/management';
 import UserAccount from './page/account';
 import Report from './page/report';
 import Profile from './page/profile';
+import Review from './page/review';
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
       <Route path="/management" element={<Manangement/> } />
       <Route path="/account" element={<UserAccount/> } />
       <Route path="/reports" element={<Report/> } />
+      <Route path="/review" element={<Review/> } />
       <Route path="/profile" element={<Profile/> } />
     </Routes>
     </BrowserRouter>

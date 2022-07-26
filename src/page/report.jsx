@@ -25,7 +25,7 @@ function Report() {
                 <div className="report-title">Earning Report</div>
                 <div className="report-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                   nostrud amet.</div>
-                <button className="btn  report-btn" >View Report</button>
+                <a href="/earning" className="btn  report-btn">View Report</a>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ function Report() {
                 <div className="report-title">Payment Report</div>
                 <div className="report-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                   nostrud amet.</div>
-                <button className="btn  report-btn" >View Report</button>
+                <a href="/paymentreport" className="btn  report-btn" >View Report</a>
               </div>
             </div>
 

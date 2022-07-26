@@ -10,6 +10,7 @@ import Report from './page/report';
 import Profile from './page/profile';
 import Review from './page/review';
 import EarnReport from './page/earnReport';
+import PaymentReport from './page/paymentReport';
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
       <Route path="/review" element={<Review/> } />
       <Route path="/profile" element={<Profile/> } />
       <Route path="/earning" element={<EarnReport/> } />
+      <Route path="/paymentreport" element={<PaymentReport/> } />
     </Routes>
     </BrowserRouter>
       </div>

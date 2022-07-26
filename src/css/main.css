@@ -712,7 +712,7 @@ color: #201A3F;
   overflow: hidden;
   overflow-x: hidden;
 }
-.nleftnav{
+.leftnav{
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 400;
@@ -862,4 +862,21 @@ color: #2B3674;
 margin-top: 20px;
 margin-bottom: 20px;
 
+}
+.report{margin: 40px;
+  text-align: center;
+
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+
+letter-spacing: 0.3px;
+
+color: #252733;
+
+}
+.reportheader{
+  padding-top: 15px;
 }

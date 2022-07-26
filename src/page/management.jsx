@@ -94,6 +94,7 @@ function Manangement() {
       </div>
     <DriverModal data={driverModal}/>
     <TripModal data={tripModal}/>
+    <privateModal data={privateModal}/>
     
     </main>
   );

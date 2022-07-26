@@ -35,7 +35,7 @@ function Leftnav() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink reloadDocument className="nav-link " to="/reports">
+              <NavLink reloadDocument className="nav-link  leftnav" to="/reports">
                 <FontAwesomeIcon icon={faChartLine} />
                 <span className="ml-3">Reports</span>
               </NavLink>

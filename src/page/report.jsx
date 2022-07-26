@@ -58,7 +58,7 @@ function Report() {
                 <div className="report-title">Referral Report</div>
                 <div className="report-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                   nostrud amet.</div>
-                <button className="btn  report-btn" >View Report</button>
+                <a href="/refererreport" className="btn  report-btn" >View Report</a>
               </div>
             </div>
 

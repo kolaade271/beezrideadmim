@@ -8,19 +8,19 @@ const DriverTable = props => {
       name: "",
       cell: row=> (<img src="https://i.ibb.co/4VgSPDq/head.png" className="table-img" alt="" />),
       sortable: true,
-      grow: -1
+      width: "50px",
     },
     {
       name: "NAME",
       selector: "name",
       sortable: true,
-      grow: 2
+      width: "150px",
     },
     {
       name: "EMAIL",
       selector: "email",
       sortable: true,
-      hide: "sm"
+      width: "200px",
     },
     {
       name: "PHONE",

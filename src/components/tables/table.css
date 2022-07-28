@@ -303,3 +303,23 @@ font-style: normal;
 .reporthead{
   padding: 20px;
 }
+
+.namebox{
+  box-sizing: border-box;
+width: 204px;
+height: 44px;
+
+background: #F4FCF5;
+border: 1px solid #1BBC3F;
+border-radius: 5px;
+margin-top:  -10px;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.3px;
+
+color: #000000;
+
+}

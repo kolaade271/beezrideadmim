@@ -12,6 +12,7 @@ import Review from './page/review';
 import EarnReport from './page/earnReport';
 import PaymentReport from './page/paymentReport';
 import RefererReport from './page/refererReport';
+import DriverwalletReport from './page/driverlogReport';
 function App() {
   return (
     <div className="App">
@@ -31,6 +32,7 @@ function App() {
       <Route path="/earning" element={<EarnReport/> } />
       <Route path="/paymentreport" element={<PaymentReport/> } />
       <Route path="/refererreport" element={<RefererReport/> } />
+      <Route path="/driverwallet" element={<DriverwalletReport/> } />
 
     </Routes>
     </BrowserRouter>

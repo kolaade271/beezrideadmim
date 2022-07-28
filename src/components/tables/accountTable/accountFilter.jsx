@@ -28,8 +28,6 @@ const AccountFilter = ({ filterText, onFilter, onClear }) => (
     <div className="col-12 col-md-5 " >
       <div className="row ">
         <div className="col-md-12 " align="right">
-
-
         <select  onChange={onFilter}  className="btn btn-md center-block filter dropdown-toggle " data-bs-toggle="dropdown">
   
   <option className="dropdown-item" value=""> <FontAwesomeIcon icon={faFilter} /> All Filter</option>
